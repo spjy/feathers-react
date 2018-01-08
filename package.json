@@ -1,0 +1,55 @@
+{
+  "name": "feathers-test",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "spjy",
+    "email": "spjy@hawaii.edu"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/"
+  },
+  "engines": {
+    "node": "^8.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run eslint && npm run mocha",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "start": "nodemon src/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "dependencies": {
+    "@feathersjs/authentication": "^2.1.1",
+    "@feathersjs/authentication-jwt": "^1.0.1",
+    "@feathersjs/authentication-local": "^1.0.4",
+    "@feathersjs/configuration": "^1.0.2",
+    "@feathersjs/errors": "^3.2.0",
+    "@feathersjs/express": "^1.1.2",
+    "@feathersjs/feathers": "^3.0.3",
+    "@feathersjs/socketio": "^3.0.1",
+    "compression": "^1.7.1",
+    "cors": "^2.8.4",
+    "feathers-mongoose": "^6.0.0",
+    "feathers-nedb": "^3.0.0",
+    "helmet": "^3.9.0",
+    "mongoose": "^4.13.4",
+    "nedb": "^1.8.0",
+    "serve-favicon": "^2.4.5",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.14.0",
+    "mocha": "^4.1.0",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  }
+}
